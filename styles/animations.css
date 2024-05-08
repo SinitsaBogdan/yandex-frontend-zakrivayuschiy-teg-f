@@ -12,3 +12,38 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes input {
+	0% {
+		transform: translate(0px);
+	}
+	50% {
+		transform: translate(4px);
+	}
+	100% {
+		transform: translate(0px);
+	}
+}
+
+@keyframes like {
+	0% {
+		fill: var(--color-accent);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		fill: var(--theme-dark-color-decor-like);
+	}
+}
+
+@keyframes like-click-scale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

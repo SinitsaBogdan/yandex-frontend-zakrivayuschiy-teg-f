@@ -5,49 +5,71 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  color: inherit;
+	color: inherit;
 }
 
 button,
 input {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
+	border: none;
+	color: currentColor;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button:focus,
+button:focus-visible,
+input:focus,
+input:focus-visible {
+	outline: none;
 }
 
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 .visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	inline-size: 1px;
+	block-size: 1px;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.filter-sepia {
+	filter: sepia(0.7);
+}
+
+.filter-saturate {
+	filter: saturate(400%);
+}
+
+.filter-invert {
+	filter: invert(0.3);
+}
+
+.filter-brightness {
+	filter: brightness(50%);
+}
+
+.filter-blur {
+	filter: blur(3px);
+}
+
+.filter-multiple {
+	filter: brightness(0.5) grayscale(100%);
+}
+
+.filter-grayscale {
+	filter: grayscale(96%);
 }

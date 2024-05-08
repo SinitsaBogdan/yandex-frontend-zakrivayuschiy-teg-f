@@ -4,3 +4,85 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+	--font-weight-global-title: 785;
+	--font-weight-global-text: 465;
+	--color-accent: var(--theme-dark-color-accent);
+	--color-accent-activ: var(--theme-dark-color-accent-activ);
+	--color-background: var(--theme-dark-color-background);
+	--color-border: var(--theme-dark-color-border);
+	--color-background-gradient-one: var(--theme-dark-color-background-gradient-one);
+	--color-background-gradient-two: var(--theme-dark-color-background-gradient-two);
+
+	--color-decor-like-sparks: var(--theme-dark-color-decor-like);
+	--color-decor-like-contour: var(--theme-dark-color-decor-like);
+	--color-decor-like-core: var(--theme-dark-color-decor-like);
+	--color-decor-like-body: var(--theme-dark-color-decor-like);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--font-weight-global-title: 785;
+		--font-weight-global-text: 465;
+		--color-accent: var(--theme-dark-color-accent);
+		--color-accent-activ: var(--theme-dark-color-accent-activ);
+		--color-background: var(--theme-dark-color-background);
+		--color-border: var(--theme-dark-color-border);
+		--color-background-gradient-one: var(--theme-dark-color-background-gradient-one);
+		--color-background-gradient-two: var(--theme-dark-color-background-gradient-two);
+
+		--color-decor-like-sparks: var(--theme-dark-color-decor-like);
+		--color-decor-like-contour: var(--theme-dark-color-decor-like);
+		--color-decor-like-core: var(--theme-dark-color-decor-like);
+		--color-decor-like-body: var(--theme-dark-color-decor-like);
+	}
+
+	.button__text {
+		mix-blend-mode: normal;
+	}
+
+	.button-floppy:hover .button__text,
+	.card__like-button:hover .button__text {
+		color: var(--color-accent);
+	}
+
+	.button-floppy:after,
+	.card__like-button::after {
+		background-color: var(--color-accent);
+	}
+}
+
+:root.theme-light {
+	--font-weight-global-title: 700;
+	--font-weight-global-text: 400;
+	--color-accent: var(--theme-light-color-accent);
+	--color-accent-activ: var(--theme-light-color-accent-activ);
+	--color-background: var(--theme-light-color-background);
+	--color-border: var(--theme-light-color-border);
+	--color-background-gradient-one: var(--theme-light-color-background-gradient-one);
+	--color-background-gradient-two: var(--theme-light-color-background-gradient-two);
+
+	--color-decor-like-sparks: var(--theme-light-color-decor-like);
+	--color-decor-like-contour: var(--theme-light-color-decor-like);
+	--color-decor-like-core: var(--theme-light-color-decor-like);
+	--color-decor-like-body: var(--theme-light-color-decor-like);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--font-weight-global-title: 700;
+		--font-weight-global-text: 400;
+		--color-accent: var(--theme-light-color-accent);
+		--color-accent-activ: var(--theme-light-color-accent-activ);
+		--color-background: var(--theme-light-color-background);
+		--color-border: var(--theme-light-color-border);
+		--color-background-gradient-one: var(--theme-light-color-background-gradient-one);
+		--color-background-gradient-two: var(--theme-light-color-background-gradient-two);
+
+		--color-decor-like-sparks: var(--theme-light-color-decor-like);
+		--color-decor-like-contour: var(--theme-light-color-decor-like);
+		--color-decor-like-core: var(--theme-light-color-decor-like);
+		--color-decor-like-body: var(--theme-light-color-decor-like);
+	}
+}
