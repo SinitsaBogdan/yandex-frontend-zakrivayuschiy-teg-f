@@ -1,0 +1,41 @@
+@media (width <= 400px) {
+	.header {
+		padding-block: 120px 25px;
+	}
+
+	.card__list li:not(:first-child) {
+		margin-block-start: 51px;
+	}
+
+	.card__title {
+		word-spacing: 6px;
+	}
+
+	.card__img {
+		inline-size: clamp(371px, 100%, 696px);
+		block-size: 371px;
+	}
+
+	.card code {
+		top: 24px;
+		right: 16px;
+	}
+
+	.card__paragraph {
+		line-height: 21px;
+		inline-size: 99%;
+	}
+
+	.button-floppy {
+		flex-direction: column;
+		row-gap: 8px;
+		padding-block: 15px;
+		inline-size: 306px;
+		block-size: 80px;
+	}
+
+	.icon-floppy {
+		min-width: 28px;
+		min-height: 28px;
+	}
+}
