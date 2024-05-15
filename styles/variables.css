@@ -4,6 +4,8 @@
 	--font-weight-global-title: 700;
 	--font-weight-global-text: 400;
 
+	--color-decor-like: rgb(255, 0, 0);
+
 	--theme-dark-color-accent: #00cc14;
 	--theme-dark-color-accent-activ: #00cc1460;
 	--theme-dark-color-background: #000;
@@ -19,7 +21,4 @@
 	--theme-light-color-background-gradient-accent: #d3d3d3;
 	--theme-light-color-background-gradient-one: #e7e7e7;
 	--theme-light-color-background-gradient-two: #1a1a1a;
-
-	--theme-dark-color-decor-like: rgb(255, 0, 0);
-	--theme-light-color-decor-like: #00cc14;
 }

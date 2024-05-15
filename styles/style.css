@@ -225,8 +225,7 @@
 	font-family: var(--font-family-accent);
 	font-size: 14px;
 	background-color: var(--color-background);
-	transition: 0.5s ease-in-out;
-    block-size: 36px;
+	block-size: 36px;
 }
 
 .card__like-button {
@@ -252,23 +251,24 @@
 	top: 0;
 	left: 0;
 	background-color: var(--color-accent);
-	transform: translate(-100%);
+	transform: translateX(-100%);
 	mix-blend-mode: difference;
 	inline-size: 100%;
 	block-size: 100%;
+	transition: 0.5s ease-in-out;
 }
 
 .btn:hover::after {
-	transform: translate(0);
+	transform: translateX(0);
 }
-
-/* ----------------------------------------------------------- */
 
 .btn:focus,
 .btn:focus-visible {
 	box-shadow: 3px 3px var(--color-accent);
 	transition: 0.3s ease;
 }
+
+/* ----------------------------------------------------------- */
 
 dialog {
 	margin: auto;

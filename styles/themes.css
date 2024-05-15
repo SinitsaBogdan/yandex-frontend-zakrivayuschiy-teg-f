@@ -9,11 +9,6 @@
 	--color-gradient-accent: var(--theme-dark-color-background-gradient-accent);
 	--color-gradient-one: var(--theme-dark-color-background-gradient-one);
 	--color-gradient-two: var(--theme-dark-color-background-gradient-two);
-
-	--color-decor-like-sparks: var(--theme-dark-color-decor-like);
-	--color-decor-like-contour: var(--theme-dark-color-decor-like);
-	--color-decor-like-core: var(--theme-dark-color-decor-like);
-	--color-decor-like-body: var(--theme-dark-color-decor-like);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,25 +23,6 @@
 		--color-gradient-accent: var(--theme-dark-color-background-gradient-accent);
 		--color-gradient-one: var(--theme-dark-color-background-gradient-one);
 		--color-gradient-two: var(--theme-dark-color-background-gradient-two);
-
-		--color-decor-like-sparks: var(--theme-dark-color-decor-like);
-		--color-decor-like-contour: var(--theme-dark-color-decor-like);
-		--color-decor-like-core: var(--theme-dark-color-decor-like);
-		--color-decor-like-body: var(--theme-dark-color-decor-like);
-	}
-
-	.button__text {
-		mix-blend-mode: normal;
-	}
-
-	.button-floppy:hover .button__text,
-	.card__like-button:hover .button__text {
-		color: var(--color-accent);
-	}
-
-	.button-floppy:after,
-	.card__like-button::after {
-		background-color: var(--color-accent);
 	}
 
 	.page::before {
@@ -74,11 +50,10 @@
 	--color-gradient-accent: var(--theme-light-color-background-gradient-accent);
 	--color-gradient-one: var(--theme-light-color-background-gradient-one);
 	--color-gradient-two: var(--theme-light-color-background-gradient-two);
+}
 
-	--color-decor-like-sparks: var(--theme-light-color-decor-like);
-	--color-decor-like-contour: var(--theme-light-color-decor-like);
-	--color-decor-like-core: var(--theme-light-color-decor-like);
-	--color-decor-like-body: var(--theme-light-color-decor-like);
+.theme-light .btn::after {
+	background-color: var(--color-background);
 }
 
 @media (prefers-color-scheme: light) {
@@ -93,10 +68,9 @@
 		--color-gradient-accent: var(--theme-light-color-background-gradient-accent);
 		--color-gradient-one: var(--theme-light-color-background-gradient-one);
 		--color-gradient-two: var(--theme-light-color-background-gradient-two);
+	}
 
-		--color-decor-like-sparks: var(--theme-light-color-decor-like);
-		--color-decor-like-contour: var(--theme-light-color-decor-like);
-		--color-decor-like-core: var(--theme-light-color-decor-like);
-		--color-decor-like-body: var(--theme-light-color-decor-like);
+	.btn::after {
+		background-color: var(--theme-light-color-accent);
 	}
 }
