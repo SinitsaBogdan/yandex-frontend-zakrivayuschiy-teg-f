@@ -19,12 +19,14 @@
 	position: fixed;
 	top: 0;
 	z-index: -1;
-	background-image:
-        repeating-linear-gradient(var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
-        repeating-linear-gradient(90deg, var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
-        linear-gradient(var(--color-gradient-one) 0.01%, var(--color-gradient-two));
-    object-fit: cover;
-    object-position: center;
+	background-image: repeating-linear-gradient(
+			var(--color-gradient-accent) 0px 2px,
+			transparent 2px 4px
+		),
+		repeating-linear-gradient(90deg, var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
+		linear-gradient(var(--color-gradient-one) 0.01%, var(--color-gradient-two));
+	object-fit: cover;
+	object-position: center;
 	block-size: 100vh;
 	inline-size: 100%;
 }
@@ -67,6 +69,7 @@
 
 .theme-menu__button {
 	position: relative;
+	padding-inline-start: 8px;
 	transition: 0.3s ease;
 }
 
@@ -75,10 +78,11 @@
 	position: absolute;
 	bottom: -6px;
 	left: 6px;
+	opacity: 0;
 	background-color: var(--color-accent-activ);
 	transition: 0.3s ease;
-	transform: scale(0);
-	inline-size: 86%;
+	transform: translateX(-100%);
+	inline-size: 100%;
 	block-size: 2px;
 }
 
@@ -89,7 +93,8 @@
 
 .theme-menu__button:focus::after,
 .theme-menu__button:focus-visible::after {
-	transform: scale(1);
+	transform: translateX(0);
+	opacity: 1;
 }
 
 .theme-menu__button:disabled {
