@@ -19,9 +19,12 @@
 	position: fixed;
 	top: 0;
 	z-index: -1;
-	background-image: repeating-linear-gradient(#000 0px 2px, transparent 2px 4px),
-		repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
-		linear-gradient(var(--color-background-gradient-one), var(--color-background-gradient-two));
+	background-image:
+        repeating-linear-gradient(var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(90deg, var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
+        linear-gradient(var(--color-gradient-one) 0.01%, var(--color-gradient-two));
+    object-fit: cover;
+    object-position: center;
 	block-size: 100vh;
 	inline-size: 100%;
 }
