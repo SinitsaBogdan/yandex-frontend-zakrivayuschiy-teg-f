@@ -24,7 +24,7 @@
 			transparent 2px 4px
 		),
 		repeating-linear-gradient(90deg, var(--color-gradient-accent) 0px 2px, transparent 2px 4px),
-		linear-gradient(var(--color-gradient-one) 0.01%, var(--color-gradient-two));
+		linear-gradient(var(--color-gradient-one), var(--color-gradient-two));
 	object-fit: cover;
 	object-position: center;
 	block-size: 100vh;
@@ -219,7 +219,6 @@
 	align-items: center;
 	column-gap: 8px;
 	border: 2px solid var(--color-border);
-	padding-block: 9px;
 	overflow: hidden;
 	color: var(--color-accent);
 	font-family: var(--font-family-accent);
@@ -234,6 +233,11 @@
 
 .button-floppy {
 	padding-inline: 21px;
+	inline-size: 335px;
+	block-size: 55px;
+	word-spacing: -8px;
+	margin-block-start: 52px;
+	margin-inline: auto;
 }
 
 .close {
