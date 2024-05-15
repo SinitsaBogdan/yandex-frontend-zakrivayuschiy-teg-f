@@ -142,7 +142,6 @@
 	text-shadow: 0px 1px var(--color-background), -1px 1px var(--color-background),
 		1px 1px var(--color-background), 0px -1px var(--color-background),
 		-1px -1px var(--color-background), 1px -1px var(--color-background);
-	mix-blend-mode: hard-light;
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
