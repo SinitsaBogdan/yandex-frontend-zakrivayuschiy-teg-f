@@ -34,7 +34,7 @@
 	margin-block: 100px;
 	border: 2px solid var(--color-accent);
 	padding-block: 136px 25px;
-	font-family: var(--font-family-accent), sans-serif;
+	font-family: var(--font-family-accent);
 	text-align: center;
 	background-color: var(--color-background);
 	inline-size: min(696px, 100%);
@@ -210,7 +210,7 @@
 	padding-block: 9px;
 	overflow: hidden;
 	color: var(--color-accent);
-	font-family: var(--font-family-accent), sans-serif;
+	font-family: var(--font-family-accent);
 	font-size: 14px;
 	background-color: var(--color-background);
 	transition: 0.5s ease-in-out;
@@ -279,7 +279,7 @@ dialog::backdrop {
 	display: flex;
 	align-items: center;
 	column-gap: 20px;
-	font-family: var(--font-family-accent), sans-serif;
+	font-family: var(--font-family-accent);
 }
 
 .dialog_form__title {
@@ -305,7 +305,6 @@ dialog:not([open]) {
 .main-body {
 	opacity: 0;
 }
-
 
 /* ----------------------------------------------------------- */
 
