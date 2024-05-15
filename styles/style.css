@@ -130,8 +130,8 @@
 }
 
 .img_wrapper {
-	display: flex;
 	position: relative;
+	display: flex;
 }
 
 .card__img {
@@ -183,19 +183,18 @@
 }
 
 .card__controller {
-	margin-block-start: 25px;
 	display: flex;
 	justify-content: end;
 	align-items: center;
 	column-gap: 10px;
+	margin-block-start: 25px;
 }
 
+/* ---------------------------------------------------------- */
+
 .like-icon {
-	object-fit: contain;
+	object-fit: cover;
 	object-position: center;
-	fill: var(--color-accent);
-	inline-size: 39px;
-	block-size: 36px;
 }
 
 .card__icon-button {
@@ -203,17 +202,74 @@
 	justify-content: center;
 	align-items: center;
 	border: 2px solid transparent;
-	transition: 0.3s ease;
-	block-size: 38px;
-	inline-size: 36px;
 }
+
+/* ---------------------------------------------------------- */
+
+.card__icon-button .sparks {
+	opacity: 0;
+}
+
+.card__icon-button .core {
+	opacity: 0;
+	transition: fill 0.3s, opacity 0.3s;
+}
+
+.card__icon-button .main-body {
+	opacity: 0;
+	transition: fill 0.3s 0.05s, opacity 0.3s 0.05s;
+}
+
+/* ---------------------------------------------------------- */
+
+.card__icon-button:hover .core {
+	opacity: 1;
+	fill: var(--color-accent);
+	transition: fill 0.3s 0.03s, opacity 0.3s 0.03s;
+}
+
+.card__icon-button:hover .main-body {
+	opacity: 1;
+	fill: var(--color-accent);
+	transition: fill 0.3s, opacity 0.3s;
+}
+
+/* ---------------------------------------------------------- */
+
+.card__icon-button:active .core {
+	opacity: 1;
+	fill: var(--color-decor-like);
+	transition: fill 0.3s 0.03s, opacity 0.3s 0.03s;
+}
+
+.card__icon-button:active .main-body {
+	opacity: 1;
+	fill: var(--color-decor-like);
+	transition: fill 0.3s, opacity 0.3s;
+}
+
+/* ---------------------------------------------------------- */
+
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body {
+	opacity: 1;
+	fill: var(--color-decor-like);
+}
+
+.like-icon.is-liked .contour {
+	opacity: 1;
+	fill: var(--color-decor-like);
+	transition: fill 0.3s 0.2s, opacity 0.3s 0.2s;
+}
+
+/* ---------------------------------------------------------- */
 
 .card__icon-button:focus,
 .card__icon-button:focus-visible {
 	border: 2px solid var(--color-accent);
 }
 
-/* ----------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 
 .btn {
 	position: relative;
@@ -228,28 +284,8 @@
 	font-size: 14px;
 	background-color: var(--color-background);
 	inline-size: 130px;
+	transition: 0.3s ease;
 	block-size: 38px;
-}
-
-.button-floppy {
-	margin-inline: auto;
-	margin-block-start: 50px;
-	inline-size: 335px;
-	block-size: 55px;
-}
-
-.icon-floppy {
-	max-width: 28px;
-	max-height: 28px;
-}
-
-.close {
-	margin-block-start: 30px;
-	padding-block: 12.5px;
-	font-size: 14px;
-	line-height: 90%;
-	text-transform: uppercase;
-	inline-size: 100%;
 }
 
 .btn::after {
@@ -272,7 +308,27 @@
 .btn:focus,
 .btn:focus-visible {
 	box-shadow: 3px 3px var(--color-accent);
-	transition: 0.3s ease;
+}
+
+.button-floppy {
+	margin-inline: auto;
+	margin-block-start: 50px;
+	inline-size: 335px;
+	block-size: 55px;
+}
+
+.icon-floppy {
+	max-width: 28px;
+	max-height: 28px;
+}
+
+.close {
+	margin-block-start: 30px;
+	padding-block: 12.5px;
+	font-size: 14px;
+	line-height: 90%;
+	text-transform: uppercase;
+	inline-size: 100%;
 }
 
 /* ----------------------------------------------------------- */
@@ -302,6 +358,7 @@ dialog::backdrop {
 .dialog_form__title {
 	font-size: 14px;
 	line-height: 150%;
+	text-transform: uppercase;
 	inline-size: 200px;
 }
 
@@ -315,12 +372,6 @@ dialog::backdrop {
 dialog:not([open]) {
 	opacity: 0;
 	pointer-events: none;
-}
-
-.sparks,
-.core,
-.main-body {
-	opacity: 0;
 }
 
 /* ----------------------------------------------------------- */

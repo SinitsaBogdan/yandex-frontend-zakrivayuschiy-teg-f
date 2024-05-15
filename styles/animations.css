@@ -10,17 +10,6 @@
 	}
 }
 
-@keyframes like {
-	0% {
-		fill: var(--color-accent);
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-		fill: var(--color-decor-like);
-	}
-}
-
 @keyframes like-click-scale {
 	0% {
 		transform: scale(1);
@@ -33,17 +22,17 @@
 	}
 }
 
-.card__icon-button:hover .core {
-	animation: 0.3s like linear forwards;
-}
-
-.card__icon-button:hover .main-body {
-	animation: 0.6s like linear forwards;
-}
-
-.card__icon-button:active .main-body,
-.card__icon-button:active .core {
-	animation: 0.6s like linear forwards;
+@keyframes like-sparcs {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+		fill: var(--color-decor-like);
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .like-icon.is-liked .heart {
@@ -51,18 +40,6 @@
 	animation: 0.3s 0.1s like-click-scale ease-in forwards;
 }
 
-.like-icon.is-liked .core {
-	animation: 0.3s like linear forwards;
-}
-
-.like-icon.is-liked .main-body {
-	animation: 0.3s like linear forwards;
-}
-
-.like-icon.is-liked .contour {
-	animation: 0.3s 0.06s like linear forwards;
-}
-
 .like-icon.is-liked .sparks {
-	animation: 0.3s 0.3s like ease-in;
+	animation: 0.4s 0.3s like-sparcs ease-in;
 }

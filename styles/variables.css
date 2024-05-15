@@ -1,24 +1,24 @@
 :root {
-	--font-family-global: 'Inter-Variable', Arial, sans-serif;
-	--font-family-accent: 'PressStart2P', fantasy, sans-serif;
-	--font-weight-global-title: 700;
-	--font-weight-global-text: 400;
+    --font-family-global: "Inter-Variable", Arial, sans-serif;
+    --font-family-accent: "PressStart2P", fantasy, sans-serif;
+    --font-weight-global-title: 700;
+    --font-weight-global-text: 400;
 
-	--color-decor-like: rgb(255, 0, 0);
+    --color-decor-like: rgb(255, 0, 0);
 
-	--theme-dark-color-accent: #00cc14;
-	--theme-dark-color-accent-activ: #00cc1460;
-	--theme-dark-color-background: #000;
-	--theme-dark-color-border: #00cc14;
-	--theme-dark-color-background-gradient-accent: #000;
-	--theme-dark-color-background-gradient-one: #007f0c;
-	--theme-dark-color-background-gradient-two: #004306;
+    --theme-dark-color-accent: #00cc14;
+    --theme-dark-color-accent-activ: #00cc1460;
+    --theme-dark-color-background: #000;
+    --theme-dark-color-border: #00cc14;
+    --theme-dark-color-background-gradient-accent: #000;
+    --theme-dark-color-background-gradient-one: #007f0c;
+    --theme-dark-color-background-gradient-two: #004306;
 
-	--theme-light-color-accent: #000;
-	--theme-light-color-accent-activ: #00000060;
-	--theme-light-color-background: #fff;
-	--theme-light-color-border: #000;
-	--theme-light-color-background-gradient-accent: #d3d3d3;
-	--theme-light-color-background-gradient-one: #e7e7e7;
-	--theme-light-color-background-gradient-two: #1a1a1a;
+    --theme-light-color-accent: #000;
+    --theme-light-color-accent-activ: #00000060;
+    --theme-light-color-background: #fff;
+    --theme-light-color-border: #000;
+    --theme-light-color-background-gradient-accent: #d3d3d3;
+    --theme-light-color-background-gradient-one: #e7e7e7;
+    --theme-light-color-background-gradient-two: #1a1a1a;
 }

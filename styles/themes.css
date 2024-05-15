@@ -93,9 +93,6 @@
 				var(--color-gradient-accent) 0px 2px,
 				transparent 2px 4px
 			),
-			linear-gradient(
-				var(--color-gradient-one),
-				var(--color-gradient-two) 0.01%,
-			);
+			linear-gradient(var(--color-gradient-one), var(--color-gradient-two) 0.01%);
 	}
 }
