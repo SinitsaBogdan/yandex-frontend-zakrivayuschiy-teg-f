@@ -31,7 +31,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-block: 100px;
+	margin-block-start: 100px;
 	border: 2px solid var(--color-accent);
 	padding-block: 136px 25px;
 	font-family: var(--font-family-accent);
@@ -40,12 +40,12 @@
 	inline-size: min(696px, 100%);
 }
 
-.header__title {
+.header__link {
 	margin-block-end: 20px;
 	font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
 
-.header__text {
+.header__title {
 	font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
 
@@ -99,6 +99,10 @@
 	position: absolute;
 	left: -24px;
 	animation: input 1s ease-in-out infinite;
+}
+
+.content {
+	padding-block: 54px 102px;
 }
 
 .card__list {
@@ -250,10 +254,6 @@
 }
 
 /* ----------------------------------------------------------- */
-
-.footer {
-	padding-block: 54px 102px;
-}
 
 .btn:focus,
 .btn:focus-visible {
