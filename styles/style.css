@@ -226,6 +226,7 @@
 	font-size: 14px;
 	background-color: var(--color-background);
 	transition: 0.5s ease-in-out;
+    block-size: 36px;
 }
 
 .card__like-button {
