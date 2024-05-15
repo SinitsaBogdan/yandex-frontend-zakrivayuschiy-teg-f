@@ -215,7 +215,7 @@ transform-origin: center;
 	border: 2px solid var(--color-accent);
 }
 
-/* -------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 .btn {
 	position: relative;
@@ -266,7 +266,7 @@ transform-origin: center;
 	transform: translate(0);
 }
 
-/* -------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 .footer {
 	padding-block: 54px 102px;
@@ -355,4 +355,34 @@ dialog:not([open]) {
 
 .like-icon.is-liked .sparks {
 	animation: 0.3s 0.3s like ease-in;
+}
+
+/* ----------------------------------------------------------- */
+
+.filter-sepia {
+	filter: sepia(0.7);
+}
+
+.filter-saturate {
+	filter: saturate(400%);
+}
+
+.filter-invert {
+	filter: invert(0.3);
+}
+
+.filter-brightness {
+	filter: brightness(50%);
+}
+
+.filter-blur {
+	filter: blur(3px);
+}
+
+.filter-multiple {
+	filter: brightness(0.5) grayscale(100%);
+}
+
+.filter-grayscale {
+	filter: grayscale(96%);
 }

@@ -45,31 +45,3 @@ ol {
 	clip-path: inset(50%);
 	white-space: nowrap;
 }
-
-.filter-sepia {
-	filter: sepia(0.7);
-}
-
-.filter-saturate {
-	filter: saturate(400%);
-}
-
-.filter-invert {
-	filter: invert(0.3);
-}
-
-.filter-brightness {
-	filter: brightness(50%);
-}
-
-.filter-blur {
-	filter: blur(3px);
-}
-
-.filter-multiple {
-	filter: brightness(0.5) grayscale(100%);
-}
-
-.filter-grayscale {
-	filter: grayscale(96%);
-}
