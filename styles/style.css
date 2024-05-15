@@ -51,7 +51,7 @@ transform-origin: center;
 	margin-block: 100px;
 	border: 2px solid var(--color-accent);
 	padding-block: 136px 25px;
-	font-family: 'PressStart2P-Regular', serif;
+	font-family: var(--font-family-accent), sans-serif;
 	text-align: center;
 	background-color: var(--color-background);
 	inline-size: min(696px, 100%);
@@ -227,7 +227,7 @@ transform-origin: center;
 	padding-block: 9px;
 	overflow: hidden;
 	color: var(--color-accent);
-	font-family: 'PressStart2P-Regular', serif;
+	font-family: var(--font-family-accent), sans-serif;
 	font-size: 14px;
 	background-color: var(--color-background);
 }
