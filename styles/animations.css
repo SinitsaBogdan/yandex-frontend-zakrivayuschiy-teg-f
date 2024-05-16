@@ -34,12 +34,3 @@
 		opacity: 0;
 	}
 }
-
-.like-icon.is-liked .heart {
-	transform-origin: center;
-	animation: 0.3s 0.1s like-click-scale ease-in forwards;
-}
-
-.like-icon.is-liked .sparks {
-	animation: 0.4s 0.3s like-sparcs ease-in;
-}
