@@ -25,9 +25,7 @@ button:hover {
 }
 
 button:focus,
-button:focus-visible,
-input:focus,
-input:focus-visible {
+input:focus {
 	outline: none;
 }
 
