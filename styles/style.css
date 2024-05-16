@@ -121,7 +121,7 @@
 }
 
 .card__list li:not(:first-child) {
-	margin-block-start: 49px;
+	margin-block-start: 50px;
 }
 
 .card {

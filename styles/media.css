@@ -4,11 +4,11 @@
 	}
 
 	.card__list li:not(:first-child) {
-		margin-block-start: 51px;
+		margin-block-start: 52px;
 	}
 
 	.card__title {
-		word-spacing: 6px;
+		word-spacing: 2px;
 	}
 
 	.card__img {
@@ -31,7 +31,7 @@
 		row-gap: 8px;
 		padding-block: 15px;
 		inline-size: 306px;
-		block-size: 80px;
+		block-size: 84px;
 	}
 
 	.icon-floppy {

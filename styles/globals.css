@@ -1,43 +1,43 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    color: inherit;
+	color: inherit;
 }
 
 button,
 input {
-    border: none;
-    color: currentColor;
-    font-family: inherit;
-    font-size: inherit;
-    background-color: transparent;
-    cursor: pointer;
+	border: none;
+	color: currentColor;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 button:focus,
 button:focus-visible,
 input:focus,
 input:focus-visible {
-    outline: none;
+	outline: none;
 }
 
 ul,
 ol {
-    list-style: none;
+	list-style: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    inline-size: 1px;
-    block-size: 1px;
-    clip-path: inset(50%);
-    white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	inline-size: 1px;
+	block-size: 1px;
+	clip-path: inset(50%);
+	white-space: nowrap;
 }
