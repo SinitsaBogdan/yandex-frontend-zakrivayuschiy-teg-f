@@ -369,7 +369,7 @@ dialog::backdrop {
 	align-items: self-start;
 	padding-inline: 30px;
 	padding-block: 30px;
-	inline-size: 353px;
+	max-inline-size: 353px;
 	block-size: 193px;
 }
 
