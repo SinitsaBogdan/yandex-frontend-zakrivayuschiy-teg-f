@@ -283,8 +283,8 @@
 	font-family: var(--font-family-accent);
 	font-size: 14px;
 	background-color: var(--color-background);
-	inline-size: 130px;
 	transition: 0.3s ease;
+	inline-size: 130px;
 	block-size: 38px;
 }
 
@@ -317,35 +317,39 @@
 	block-size: 55px;
 }
 
-.icon-floppy {
+.button-floppy .icon-floppy {
 	max-width: 28px;
 	max-height: 28px;
-}
-
-.close {
-	margin-block-start: 30px;
-	padding-block: 12.5px;
-	font-size: 14px;
-	line-height: 90%;
-	text-transform: uppercase;
-	inline-size: 100%;
 }
 
 /* ----------------------------------------------------------- */
 
 dialog {
 	margin: auto;
-	padding-inline: 30px;
-	padding-block: 30px;
 	outline: none;
 	color: var(--color-accent);
 	background-color: var(--color-background);
 	transition: opacity 0.2s ease-in-out;
-	inline-size: 353px;
+}
+
+dialog:not([open]) {
+	opacity: 0;
+	pointer-events: none;
 }
 
 dialog::backdrop {
 	background-color: #00000075;
+}
+
+.dialog-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: self-start;
+	padding-inline: 30px;
+	padding-block: 30px;
+	inline-size: 353px;
+	block-size: 193px;
 }
 
 .dialog_form__content {
@@ -359,19 +363,16 @@ dialog::backdrop {
 	font-size: 14px;
 	line-height: 150%;
 	text-transform: uppercase;
-	inline-size: 200px;
+	inline-size: 234px;
 }
 
-.dialog-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: self-start;
-}
-
-dialog:not([open]) {
-	opacity: 0;
-	pointer-events: none;
+.close {
+	margin-block-start: 30px;
+	padding-block: 12.5px;
+	font-size: 14px;
+	line-height: 90%;
+	text-transform: uppercase;
+	inline-size: 100%;
 }
 
 /* ----------------------------------------------------------- */
