@@ -20,6 +20,10 @@ input {
 	cursor: pointer;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 button:focus,
 button:focus-visible,
 input:focus,
